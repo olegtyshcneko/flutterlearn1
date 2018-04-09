@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
+import 'kittenlist.dart';
 
 //void main() => runApp(new MyApp());
 
 void main() {
-  runApp(new MySecondApp());
+  runApp(new MyKittenApp());
+}
+
+class MyKittenApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: "Kitten app",
+      theme: new ThemeData.light(),
+      home: new KittenPage()
+    );
+  }
 }
 
 class MySecondApp extends StatelessWidget {
